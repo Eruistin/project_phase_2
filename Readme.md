@@ -47,6 +47,21 @@ As some of you have asked about the details of the project, we confirm some sett
 
 
 ## Report
-stay tuned for the report content and format.
+**tentative**
 
+ - About methodology (12 points), we require:
+    - a clear diagram of the whole pipeline;
+    - the explanation of each component in your diagram (may include how you design shadow models, different calibrations, verification);
+    - be concise and structured, attaching necessary plots and be within 3 pages.
+ - Results (6 points): show the screenshot of your score of val phase on the leaderboard.
+ - Code (2 points): attach the **core** MIA codes.
+ - Appendix: you may add more plots here if you want, beyond the 3-page methodology limit
 
+The scores of Results are given by (if your TPR is x):
+ - `[0.15,1]` 6
+ - `[0.13,0.15)` 6 - 25(0.15-x)
+ - `[0.1,0.13)` 5.5 - 50(0.13-x)
+ - `[0.05,0.1)` 4-60(0.1-x)
+ - `[0.02,0.05)` 1
+ - `[0.01,0.02)` 0.5
+ - `[0,0.01)` 0
