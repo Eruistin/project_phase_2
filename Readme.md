@@ -46,12 +46,12 @@ As some of you have asked about the details of the project, we confirm some sett
  - I suggest you train your shadow models with the same config to start, once you achieved like 10% TPR at 1% FPR, you may do the hyperparameter tuning and other training configs that you feel reasonable.
 
 
-## Report
-**tentative**
+## Report 
+edit on Nov 12 7pm about the explanation. Reports submitted before do not need changes.
 
  - About methodology (12 points), we require:
     - a clear diagram of the whole pipeline;
-    - the explanation of each component in your diagram (may include how you design shadow models, different calibrations, verification);
+    - the explanation of each component in your diagram (may include how you design shadow models, score calibrations, verification); IMPORTANT: We focus more on the core steps, e.g. how do you design your data splits and train corresponding shadow models, and how do you assign final predictions based on your score functions. Trivial details can be simplified.
     - be concise and structured, attaching necessary plots and be within 3 pages.
  - Results (6 points): show the screenshot of your score of val phase on the leaderboard.
  - Code (2 points): attach the **core** MIA codes.
