@@ -71,3 +71,25 @@ for i in $(seq 0 $((NUM_SHADOWS-1))); do
     
     echo "✓ ${shadow_name} trained"
 done
+
+
+
+# ============================================================================
+# Step 5: Run MIA Attack (Multiple Methods)
+# ============================================================================
+echo "========================================"
+echo "Step 5: Running MIA Attack"
+echo "========================================"
+
+# Method 1: Multi-shadow with rich features
+echo "Method 1: Multi-shadow with features..."
+python multi_shadow_mia_complete.py \
+    --target_model ${TARGET_MODEL} \
+    --shadow_dir ${SHADOW_DIR} \
+    --shadow_info shadow_model_info.json \
+    --data_dir ${DATA_DIR}/train \
+    --data_file train_shadow_0.json \
+    --sample_indices_file sample_indices.npy \
+    --label_file label.npy \
+    --method features \
+    --output predictions_features.npy
